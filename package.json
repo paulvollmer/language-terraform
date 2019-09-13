@@ -2,6 +2,9 @@
   "name": "language-terraform",
   "version": "0.8.2",
   "description": "Terraform.io support for Atom",
+  "scripts": {
+    "build": "cd scripts && node main.js && sh ./gitclone_process.sh"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/GiantToast/language-terraform.git"
@@ -14,5 +17,8 @@
   },
   "bugs": {
     "url": "https://github.com/GiantToast/language-terraform/issues"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3"
   }
 }
